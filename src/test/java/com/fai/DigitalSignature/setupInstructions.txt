@@ -1,0 +1,42 @@
+helm install stable/cert-manager --version 0.5.2 -n cert-manager --namespace cert-manager --set ingressShim.defaultIssuerName=letsencrypt-prod --set ingressShim.defaultIssuerKind=ClusterIssuer
+
+Troubleshooting Issue:
+1. cert-manager latest is not working. Getting error in cainjector not able to connect to connect to webhook api on 6448. Even when checked
+ webhook issuer, it is showing not in ready state. so installed previous version of cert-manager which is working fine.
+ helm install stable/cert-manager --version 0.5.2 -n cert-manager --namespace cert-manager --set ingressShim.defaultIssuerName=letsencrypt-prod --set ingressShim.defaultIssuerKind=ClusterIssuer
+
+2. Creating a free domain from freenom site and then mapping nginx-ingress-controller service external ip to that domain. 
+To map ip go to My Domains and then click on Manage Domain and then click on Manage freedom dns and then keep blank in Name and 
+create A type and give that service nginx-ingress-controller external ip, then try to connect to domain which you created and it would 
+redirect you to same page where your exteral service IP would have redirected you.
+
+3. Install fabric-ca-client executable binary to enroll fabric components like orderers and peers. I did this through command 
+go get -u github.com/hyperledger/fabric-ca/cmd/...
+but same can also be done by downloading github fabric-ca repo and then do make fabric-ca-client (there are other options as well in 
+makefile). While installing fabric-ca-client binaries from got get command, I got gcc issue in powershell. 
+Then i install choco install GnuWin which installs GnuWin 0.6.3.1 which in turn also downloads gcc make c++ libraries. 
+I also tried other options in parallel, so not sure which one fix this gcc make issue. I also downloaded Mingw-w64 from https://sourceforge.net/projects/mingw-w64/ and also downloaded TDM-GCC MINGW Compiler from https://sourceforge.net/projects/tdm-gcc/
+
+4. set FABRIC_CA_CLIENT_HOME=./config as environment variable before running fabric-ca-client command. I did this by running 
+export FABRIC_CA_CLIENT_HOME=./config. 
+
+5. Also need to install configtxgen binary to create genesis block and channel.tx file. Also you need to set binary installtion path to 
+PATH variable through system path variable modification
+
+6. Install incubator repositiories before using them in Helm. I faced this issue while installing incubator/kafka with helm. so I run thie
+helm repo add incubator http://storage.googleapis.com/kubernetes-charts-incubator and then deployu through helm
+
+7. While deploying kafka zookeeper, last kafka broker was not getting deployed due to affinity section defined in yaml file which says 
+anti-affinity for kafka broker cannot be deployed on same node where another kafka broker is already deployed and also there was an 
+affinity section which says deploy kafka on the node where zookeeper is also present but since we just have 3 worker nodes cluster 
+due to which last kafka broker was failing. I removed the affinity section which solved this issue.
+
+8. Don't use git bash for windows to create/join channels from the kubernetes pod. Use powershell instead. 
+Though we also have workaround for this, run the below command
+In Powershell: kubectl exec -n blockchain $PEER_POD -- peer channel create -o ord1-hlf-ord.blockchain.svc.cluster.local:7050 -c mychannel -f /hl_config/channel/mychannel.tx
+In windows Git Bash: kubectl exec $PEER_POD -n blockchain -- bash -c 'peer channel fetch config /var/hyperledger/mychannel.block -c mychannel -o ord1-hlf-ord.blockchain.svc.cluster.local:7050'
+
+9. Run the below command in windows git bash terminal to exec into the pod interactively.
+winpty kubectl exec -it $PEER_POD -n blockchain -- bash
+For Powershell use as usual.
+

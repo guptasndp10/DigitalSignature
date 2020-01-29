@@ -1,0 +1,114 @@
+2019-10-11 22:05:18.165  INFO 116348 --- [main] c.f.D.DigitalSignatureApplication        : Starting DigitalSignatureApplication on FAI-BLR04L1018 with PID 116348 (C:\Users\sagupta\Java_Applications\DigitalSignature\build\classes\java\main started by sagupta in C:\Users\sagupta\Java_Applications\DigitalSignature)
+2019-10-11 22:05:18.171 DEBUG 116348 --- [main] c.f.D.DigitalSignatureApplication        : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-11 22:05:18.172  INFO 116348 --- [main] c.f.D.DigitalSignatureApplication        : The following profiles are active: dev
+2019-10-11 22:05:21.625  INFO 116348 --- [main] o.s.b.w.e.n.NettyWebServer               : Netty started on port(s): 8080
+2019-10-11 22:05:21.630  INFO 116348 --- [main] c.f.D.DigitalSignatureApplication        : Started DigitalSignatureApplication in 4.368 seconds (JVM running for 6.03)
+2019-10-11 22:05:22.812 DEBUG 116348 --- [reactor-http-nio-2] c.f.D.h.IdentityHandler                  : ******************************SIGN AND ENCRYPT********************************
+2019-10-11 22:05:22.970 DEBUG 116348 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : USER DATA RECEVIED WITH USER ID AS 
+2019-10-11 22:05:22.973 DEBUG 116348 --- [reactor-http-nio-2] c.f.D.c.DocEncryptDecryptService         : INSIDE VALIDATOR sandeep
+2019-10-11 22:05:26.480 DEBUG 116348 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : USER DATA IS VALIDATED USING VALIDATOR
+2019-10-11 22:05:26.589 DEBUG 116348 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : DOC IS SIGNED BY THE USER WITH USERID ASsandeep
+2019-10-11 22:05:27.141 DEBUG 116348 --- [reactor-http-nio-2] c.f.D.c.DocEncryptDecryptService         : FILE IS ENCRYPTED BY THE COUNTER USER WITH USERID ASgaurav
+2019-10-11 22:05:27.148 DEBUG 116348 --- [reactor-http-nio-2] c.f.D.c.DocEncryptDecryptService         : FILE IS ENCRYPTED BY THE COUNTER USER WITH USERID ASbhaskar
+2019-10-11 22:05:27.148 DEBUG 116348 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : DOC IS ENCRYPTED WITH USER AND COUNTERUSER
+2019-10-11 22:05:27.148 DEBUG 116348 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : DOC IS SIGNED AND ENCRYPTED IN 4.335 SECONDS
+2019-10-15 11:13:05.307  INFO 147412 --- [main] c.f.D.DigitalSignatureApplication        : Starting DigitalSignatureApplication on FAI-BLR04L1018 with PID 147412 (C:\Users\sagupta\Java_Applications\DigitalSignature\build\classes\java\main started by sagupta in C:\Users\sagupta\Java_Applications\DigitalSignature)
+2019-10-15 11:13:05.316 DEBUG 147412 --- [main] c.f.D.DigitalSignatureApplication        : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-15 11:13:05.317  INFO 147412 --- [main] c.f.D.DigitalSignatureApplication        : No active profile set, falling back to default profiles: default
+2019-10-15 11:13:11.358  INFO 147412 --- [main] o.s.b.w.e.n.NettyWebServer               : Netty started on port(s): 8080
+2019-10-15 11:13:11.367  INFO 147412 --- [main] c.f.D.DigitalSignatureApplication        : Started DigitalSignatureApplication in 7.188 seconds (JVM running for 10.196)
+2019-10-15 11:19:21.880 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.h.IdentityHandler                  : ******************************SIGN AND ENCRYPT********************************
+2019-10-15 11:19:22.142 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : USER DATA RECEVIED WITH USER ID AS 
+2019-10-15 11:19:22.164 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.c.DocEncryptDecryptService         : INSIDE VALIDATOR sandeep
+2019-10-15 11:19:22.165 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : USER DATA IS VALIDATED USING VALIDATOR
+2019-10-15 11:19:22.347 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : DOC IS SIGNED BY THE USER WITH USERID ASsandeep
+2019-10-15 11:19:23.434 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.c.DocEncryptDecryptService         : FILE IS ENCRYPTED BY THE COUNTER USER WITH USERID ASgaurav
+2019-10-15 11:19:23.442 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.c.DocEncryptDecryptService         : FILE IS ENCRYPTED BY THE COUNTER USER WITH USERID ASbhaskar
+2019-10-15 11:19:23.443 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : DOC IS ENCRYPTED WITH USER AND COUNTERUSER
+2019-10-15 11:19:23.443 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : DOC IS SIGNED AND ENCRYPTED IN 1.563 SECONDS
+2019-10-15 11:21:20.105 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.h.IdentityHandler                  : ******************************VERIFY SIGN DECRYPT DOC INTEGRITY********************************
+2019-10-15 11:21:20.109 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : USER DATA RECEVIED WITH USER ID AS 
+2019-10-15 11:21:20.110 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : USER DATA IS VALIDATE USING VALIDATOR
+2019-10-15 11:21:20.128 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : SIGN IS VERIFIED false
+2019-10-15 11:21:20.129 ERROR 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : Error occured Signature Not Recognized
+2019-10-15 11:21:20.130 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : SIGN VERIFIED DECRYPTED AND DOC INTEGRITY CHECK IN 0.023 SECONDS
+2019-10-15 11:21:20.130 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : REQUEST FAILED IN 0.024 SECONDS
+2019-10-15 11:22:03.277 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.h.IdentityHandler                  : ******************************VERIFY SIGN DECRYPT DOC INTEGRITY********************************
+2019-10-15 11:22:03.279 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : USER DATA RECEVIED WITH USER ID AS 
+2019-10-15 11:22:03.280 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : USER DATA IS VALIDATE USING VALIDATOR
+2019-10-15 11:22:03.290 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : SIGN IS VERIFIED false
+2019-10-15 11:22:03.291 ERROR 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : Error occured Signature Not Recognized
+2019-10-15 11:22:03.292 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : SIGN VERIFIED DECRYPTED AND DOC INTEGRITY CHECK IN 0.014 SECONDS
+2019-10-15 11:22:03.293 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : REQUEST FAILED IN 0.015 SECONDS
+2019-10-15 11:24:21.221 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.h.IdentityHandler                  : ******************************VERIFY SIGN DECRYPT DOC INTEGRITY********************************
+2019-10-15 11:24:38.279 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.h.IdentityHandler                  : ******************************VERIFY SIGN DECRYPT DOC INTEGRITY********************************
+2019-10-15 11:24:38.282 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : USER DATA RECEVIED WITH USER ID AS 
+2019-10-15 11:24:38.282 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : USER DATA IS VALIDATE USING VALIDATOR
+2019-10-15 11:24:38.291 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : SIGN IS VERIFIED false
+2019-10-15 11:24:38.292 ERROR 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : Error occured Signature Not Recognized
+2019-10-15 11:24:38.293 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : SIGN VERIFIED DECRYPTED AND DOC INTEGRITY CHECK IN 0.013 SECONDS
+2019-10-15 11:24:38.294 DEBUG 147412 --- [reactor-http-nio-3] c.f.D.s.IdentityService                  : REQUEST FAILED IN 0.014 SECONDS
+2019-10-15 11:25:44.165  INFO 139732 --- [main] c.f.D.DigitalSignatureApplication        : Starting DigitalSignatureApplication on FAI-BLR04L1018 with PID 139732 (C:\Users\sagupta\Java_Applications\DigitalSignature\build\classes\java\main started by sagupta in C:\Users\sagupta\Java_Applications\DigitalSignature)
+2019-10-15 11:25:44.180 DEBUG 139732 --- [main] c.f.D.DigitalSignatureApplication        : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-10-15 11:25:44.181  INFO 139732 --- [main] c.f.D.DigitalSignatureApplication        : The following profiles are active: dev
+2019-10-15 11:25:52.031  INFO 139732 --- [main] o.s.b.w.e.n.NettyWebServer               : Netty started on port(s): 8080
+2019-10-15 11:25:52.040  INFO 139732 --- [main] c.f.D.DigitalSignatureApplication        : Started DigitalSignatureApplication in 9.458 seconds (JVM running for 13.207)
+2019-10-15 11:28:27.686 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.h.IdentityHandler                  : ******************************VERIFY SIGN DECRYPT DOC INTEGRITY********************************
+2019-10-15 11:32:50.499 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : USER DATA RECEVIED WITH USER ID AS 
+2019-10-15 11:32:50.525 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : USER DATA IS VALIDATE USING VALIDATOR
+2019-10-15 11:32:50.647 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : SIGN IS VERIFIED false
+2019-10-15 11:32:50.650 ERROR 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : Error occured Signature Not Recognized
+2019-10-15 11:32:50.651 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : SIGN VERIFIED DECRYPTED AND DOC INTEGRITY CHECK IN 256.551 SECONDS
+2019-10-15 11:32:50.657 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : REQUEST FAILED IN 256.557 SECONDS
+2019-10-15 11:32:55.418 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.h.IdentityHandler                  : ******************************VERIFY SIGN DECRYPT DOC INTEGRITY********************************
+2019-10-15 11:32:58.261 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : USER DATA RECEVIED WITH USER ID AS 
+2019-10-15 11:32:58.261 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : USER DATA IS VALIDATE USING VALIDATOR
+2019-10-15 11:32:58.286 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : SIGN IS VERIFIED true
+2019-10-15 11:33:00.066 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : DECRYPTED DATA IS VGhpcyBpcyB0ZXN0IHN0cmluZw==
+2019-10-15 11:33:00.070 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : SIGN VERIFIED DECRYPTED AND DOC INTEGRITY CHECK IN 1.812 SECONDS
+2019-10-15 11:39:11.218 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.h.IdentityHandler                  : ******************************VERIFY SIGN DECRYPT DOC INTEGRITY********************************
+2019-10-15 11:39:11.222 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : USER DATA RECEVIED WITH USER ID AS 
+2019-10-15 11:39:11.223 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : USER DATA IS VALIDATE USING VALIDATOR
+2019-10-15 11:39:11.233 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : INITIATOR SIGNATURE IS VERIFIED true
+2019-10-15 11:39:11.258 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : DOC IS SIGNED WITH USERID sandeep
+2019-10-15 11:39:11.259 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : DOC IS SIGNED IN 0.04 SECONDS
+2019-10-15 11:43:56.248 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.h.IdentityHandler                  : ******************************VERIFY SIGN DECRYPT DOC INTEGRITY********************************
+2019-10-15 11:43:56.251 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : USER DATA RECEVIED WITH USER ID AS 
+2019-10-15 11:43:56.251 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : USER DATA IS VALIDATE USING VALIDATOR
+2019-10-15 11:43:56.280 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : INITIATOR SIGNATURE IS VERIFIED true
+2019-10-15 11:44:35.851 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : DOC IS SIGNED WITH USERID sandeep
+2019-10-15 11:44:35.852 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : DOC IS SIGNED IN 39.603 SECONDS
+2019-10-15 11:47:55.154 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.h.IdentityHandler                  : ******************************VERIFY SIGN DECRYPT DOC INTEGRITY********************************
+2019-10-15 11:47:55.158 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : USER DATA RECEVIED WITH USER ID AS 
+2019-10-15 11:47:55.159 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : USER DATA IS VALIDATE USING VALIDATOR
+2019-10-15 11:47:55.169 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : SIGNATURE IS VERIFIED true
+2019-10-15 11:47:55.169 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : SIGN VERIFIED IN 0.014 SECONDS
+2019-10-15 11:54:05.369 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.h.IdentityHandler                  : ******************************VERIFY SIGN DECRYPT DOC INTEGRITY********************************
+2019-10-15 11:54:05.373 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : USER DATA RECEVIED WITH USER ID AS 
+2019-10-15 11:54:05.373 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : USER DATA IS VALIDATE USING VALIDATOR
+2019-10-15 11:54:05.382 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : SIGN IS VERIFIED true
+2019-10-15 11:54:05.406 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : DECRYPTED DATA IS VGhpcyBpcyB0ZXN0IHN0cmluZw==
+2019-10-15 11:54:05.406 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : SIGN VERIFIED AND DECRYPTED IN 0.036 SECONDS
+2019-10-15 14:54:04.851 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.h.IdentityHandler                  : ******************************SIGN AND ENCRYPT********************************
+2019-10-15 14:54:04.883 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : USER DATA RECEVIED WITH USER ID AS 
+2019-10-15 14:54:04.884 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.c.DocEncryptDecryptService         : INSIDE VALIDATOR sandeep
+2019-10-15 14:54:11.657 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : USER DATA IS VALIDATED USING VALIDATOR
+2019-10-15 14:54:11.682 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : DOC IS SIGNED BY THE USER WITH USERID ASsandeep
+2019-10-15 14:54:11.726 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.c.DocEncryptDecryptService         : FILE IS ENCRYPTED BY THE COUNTER USER WITH USERID ASgaurav
+2019-10-15 14:54:11.734 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.c.DocEncryptDecryptService         : FILE IS ENCRYPTED BY THE COUNTER USER WITH USERID ASbhaskar
+2019-10-15 14:54:11.734 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : DOC IS ENCRYPTED WITH USER AND COUNTERUSER
+2019-10-15 14:54:11.734 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : DOC IS SIGNED AND ENCRYPTED IN 6.876 SECONDS
+2019-10-15 15:00:16.237 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.h.IdentityHandler                  : ******************************VERIFY SIGN DECRYPT DOC INTEGRITY********************************
+2019-10-15 15:00:16.239 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : USER DATA RECEVIED WITH USER ID AS 
+2019-10-15 15:00:16.240 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : USER DATA IS VALIDATE USING VALIDATOR
+2019-10-15 15:00:16.249 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : INITIATOR SIGNATURE IS VERIFIED true
+2019-10-15 15:00:22.420 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : DOC IS SIGNED WITH USERID sandeep
+2019-10-15 15:00:22.421 DEBUG 139732 --- [reactor-http-nio-2] c.f.D.s.IdentityService                  : DOC IS SIGNED IN 6.182 SECONDS
+2019-11-08 00:36:46.462  INFO 268584 --- [Test worker] c.f.D.DigitalSignatureApplicationTests   : Starting DigitalSignatureApplicationTests on FAI-BLR04L1018 with PID 268584 (started by sagupta in C:\Users\sagupta\Java_Applications\DigitalSignature)
+2019-11-08 00:36:46.472 DEBUG 268584 --- [Test worker] c.f.D.DigitalSignatureApplicationTests   : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-08 00:36:46.483  INFO 268584 --- [Test worker] c.f.D.DigitalSignatureApplicationTests   : No active profile set, falling back to default profiles: default
+2019-11-08 00:36:52.872  INFO 268584 --- [Test worker] c.f.D.DigitalSignatureApplicationTests   : Started DigitalSignatureApplicationTests in 7.707 seconds (JVM running for 13.007)
+2019-11-08 01:03:44.212  INFO 252012 --- [Test worker] c.f.D.DigitalSignatureApplicationTests   : Starting DigitalSignatureApplicationTests on FAI-BLR04L1018 with PID 252012 (started by sagupta in C:\Users\sagupta\Java_Applications\DigitalSignature)
+2019-11-08 01:03:44.225 DEBUG 252012 --- [Test worker] c.f.D.DigitalSignatureApplicationTests   : Running with Spring Boot v2.1.8.RELEASE, Spring v5.1.9.RELEASE
+2019-11-08 01:03:44.234  INFO 252012 --- [Test worker] c.f.D.DigitalSignatureApplicationTests   : No active profile set, falling back to default profiles: default
+2019-11-08 01:03:48.964  INFO 252012 --- [Test worker] c.f.D.DigitalSignatureApplicationTests   : Started DigitalSignatureApplicationTests in 5.626 seconds (JVM running for 9.656)
